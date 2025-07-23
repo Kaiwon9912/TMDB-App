@@ -82,7 +82,10 @@ class _PeopleDetailScreenState extends State<PeopleDetailScreen> {
                         ? ReadMoreText(text: actor.biography!, length: 500)
                         : Text('No bio'),
                     const SizedBox(height: 8),
-                    const Text('Known for'),
+                    const Text(
+                      'Known for',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
                     const SizedBox(height: 8),
                     BlocBuilder<GetPeopleCreditsBloc, GetPeopleCreditsState>(
                       builder: (context, state) {
