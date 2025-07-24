@@ -33,7 +33,7 @@ class _FavoritesMovieScreenState extends State<FavoritesMovieScreen> {
               child: GridView.builder(
                 itemCount: movies.length,
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 3, 
+                  crossAxisCount: 3,
                   mainAxisSpacing: 10,
                   crossAxisSpacing: 10,
                   childAspectRatio: 2 / 3,
@@ -44,6 +44,7 @@ class _FavoritesMovieScreenState extends State<FavoritesMovieScreen> {
                     id: movie.id,
                     posterPath: movie.posterPath,
                     title: movie.title,
+                    voteAverage: movie.voteAverage,
                   );
                   return MovieCard(movie: movieEntity);
                 },

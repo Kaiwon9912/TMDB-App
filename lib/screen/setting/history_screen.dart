@@ -44,6 +44,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                   id: movie.id,
                   posterPath: movie.posterPath,
                   title: movie.title,
+                  voteAverage: movie.voteAverage,
                 );
                 return MovieCard(movie: movieEntity);
               },
