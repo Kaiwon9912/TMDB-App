@@ -44,6 +44,7 @@ class _SettingScreenState extends State<SettingScreen> {
               title: const Text('Logout'),
               onTap: () {
                 context.read<SignInBloc>().add(SignOutRequired());
+                Navigator.pop(context);
               },
             ),
           ],
