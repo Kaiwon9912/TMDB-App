@@ -19,6 +19,7 @@ class SignInBloc extends Bloc<SignInEvent, SignInState> {
         emit(SignInSuccess());
       } catch (e) {
         log(e.toString());
+        emit(SignInFailure());
       }
     });
     on<SignOutRequired>((event, emit) async {

@@ -45,6 +45,7 @@ class _MovieDetailPageState extends State<MovieDetailScreen> {
               title: movie.title,
               posterPath: movie.posterPath,
               id: movie.id,
+              voteAverage: movie.voteAverage,
             );
 
             return SingleChildScrollView(

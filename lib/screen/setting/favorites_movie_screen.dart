@@ -33,7 +33,7 @@ class _FavoritesMovieScreenState extends State<FavoritesMovieScreen> {
               child: GridView.builder(
                 itemCount: movies.length,
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 3, // 2 cột
+                  crossAxisCount: 3, 
                   mainAxisSpacing: 10,
                   crossAxisSpacing: 10,
                   childAspectRatio: 2 / 3,
