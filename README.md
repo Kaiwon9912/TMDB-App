@@ -55,5 +55,3 @@
 
 
 
-<h2>📁 Project Structure</h2>
-<p>Organized by Clean Architecture principles with separation of presentation, domain, and data layers.</p>
